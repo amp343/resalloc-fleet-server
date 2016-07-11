@@ -1,0 +1,54 @@
+server1:
+  container_name: server1
+  build: .
+  ports:
+    - 82:80
+  external_links:
+    - acl
+  environment:
+    RESOURCE_NAME: server1
+    ACL_URI: http://acl:3000/resources/
+
+server2:
+  container_name: server2
+  build: .
+  ports:
+    - 83:80
+  external_links:
+    - acl
+  environment:
+    RESOURCE_NAME: server2
+    ACL_URI: http://acl:3000/resources/
+
+server3:
+  container_name: server3
+  build: .
+  ports:
+    - 84:80
+  external_links:
+    - acl
+  environment:
+    RESOURCE_NAME: server3
+    ACL_URI: http://acl:3000/resources/
+
+server4:
+  container_name: server4
+  build: .
+  ports:
+    - 85:80
+  external_links:
+    - acl
+  environment:
+    RESOURCE_NAME: server4
+    ACL_URI: http://acl:3000/resources/
+
+server5:
+  container_name: server5
+  build: .
+  ports:
+    - 86:80
+  external_links:
+    - acl
+  environment:
+    RESOURCE_NAME: server5
+    ACL_URI: http://acl:3000/resources/

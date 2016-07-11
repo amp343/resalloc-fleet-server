@@ -1,0 +1,13 @@
+{
+    "name": "amp343/resource",
+    "description": "Some resource",
+    "autoload": {
+        "psr-4": {
+            "Fleet\\": "src/Fleet"
+        }
+    },
+    "require": {
+        "php": ">7.0.0,<=7.1.0",
+        "guzzlehttp/guzzle": "6.2.0"
+    }
+}
